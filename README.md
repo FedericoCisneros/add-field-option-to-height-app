@@ -21,7 +21,7 @@ The result of add the option to the field.
 ## Example usage
 
 ```yaml
-uses: actions/add-field-option-to-height-app@v1.1
+uses: actions/add-field-option-to-height-app@v1.2
 with:
   field: 'Prueba'
   option: 'Prueba'
