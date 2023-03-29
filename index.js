@@ -5,6 +5,8 @@ const axios = require('axios');
 try {
     const field = core.getInput('field');
     const option = core.getInput('option');
+    console.log(`Adding option ${option} to field ${field}...`)
+    console.log('API key exist: ' + process.env.HEIGHT_API_KEY !== undefined);
     axios.post(`https://api.height.app/fieldTemplates/${field}/options`, {
         value: option
     }, {
