@@ -1,5 +1,5 @@
-name: "Crear nueva version"
-on: 
+name: "Add field option to Height App"
+on:
   push:
     branches: [ main ]
 jobs:
@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Create milestone  
+      - name: Add field option to Height App
         id: create-milestone
         uses: ./
         with:
-          field: 0f67ff96-ef93-42eb-acca-bd0bbca58291
-          option: 'Prueba'
+          field: 3c4ca512-2c67-4163-853d-536c52b59969
+          option: 'option 1'
         env:
-          HEIGHT_API_KEY: secret_2b8HjHMOji8cyMOysUmyUQ8esSgu6Ois4
+          HEIGHT_API_KEY: ${{ secrets.HEIGHT_API_KEY }}

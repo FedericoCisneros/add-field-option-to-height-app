@@ -23,8 +23,8 @@ The result of add the option to the field.
 ```yaml
 uses: actions/add-field-option-to-height-app@v1.2
 with:
-  field: 'Prueba'
-  option: 'Prueba'
+  field: 3c4ca512-2c67-4163-853d-536c52b59969
+  option: 'New Option'
 env:
   HEIGHT_API_KEY: ${{ secrets.HEIGHT_API_KEY }}
 ```
