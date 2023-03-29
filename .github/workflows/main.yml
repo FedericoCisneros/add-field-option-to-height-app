@@ -1,0 +1,17 @@
+name: "Crear nueva version"
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create milestone  
+        id: create-milestone
+        uses: ./
+        with:
+          field: 0f67ff96-ef93-42eb-acca-bd0bbca58291
+          option: 'Prueba'
+        env:
+          HEIGHT_API_KEY: secret_2b8HjHMOji8cyMOysUmyUQ8esSgu6Ois4
