@@ -1,5 +1,8 @@
 name: 'Add field option to Height App'
 description: 'Add field option to Height App'
+branding:
+  icon: check-square
+  color: green
 inputs:
   field:  # id of the field to add option
     description: 'Field ID to add an option'
